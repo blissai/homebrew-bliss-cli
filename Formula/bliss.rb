@@ -17,6 +17,6 @@ class Bliss < Formula
   end
 
   test do
-    system 'bliss'
+    system 'bliss', 'help'
   end
 end
