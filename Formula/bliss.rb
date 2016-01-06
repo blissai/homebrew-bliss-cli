@@ -1,13 +1,14 @@
 class Bliss < Formula
-  version '1.0.14'
+  version '1.0.15'
   desc 'Bliss Enterprise Tool for local repository analysis.'
   homepage 'https://github.com/founderbliss/docker'
-  url 'https://github.com/founderbliss/bliss-cli/archive/1.0.14.tar.gz'
-  sha256 '6c5124ca6199988f2a4c7979381ee7df63baf658047db819a2830b5579a0b99e'
+  url 'https://github.com/founderbliss/bliss-cli/archive/1.0.15.tar.gz'
+  sha256 '23dc37ac7229de790c4e78af209e64d602b41d64fffcdd61a495aa727b9317e4'
   head 'https://github.com/founderbliss/bliss-cli.git'
 
   def install
     lib.install Dir['lib/**']
+    scripts.install Dir['scripts/**']
     prefix.install 'blisscollector.rb'
     prefix.install 'Dockerfile'
     prefix.install 'Gemfile'
