@@ -8,7 +8,7 @@ class Bliss < Formula
 
   def install
     lib.install Dir['lib/**']
-    scripts.install Dir['scripts/**']
+    prefix.install Dir['scripts/**']
     prefix.install 'blisscollector.rb'
     prefix.install 'Dockerfile'
     prefix.install 'Gemfile'
