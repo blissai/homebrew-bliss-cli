@@ -1,10 +1,10 @@
 class Bliss < Formula
-  VERSION = '1.0.35'
+  VERSION = '1.0.36'
   version "#{VERSION}"
   desc 'Bliss Enterprise Tool for local repository analysis.'
   homepage 'https://github.com/founderbliss/docker'
   url "https://github.com/founderbliss/bliss-cli/archive/#{VERSION}.tar.gz"
-  sha256 '5233ffc4765f7ffa0524b09bbbf9ad11e2974ffe30637f1d644f9046ed19df7b'
+  sha256 'c76ac7fa7f0663f2dfe149de84c67072d1abb6c4d790a8c12120351b0602af3a'
   head 'https://github.com/founderbliss/bliss-cli.git'
 
   def install
