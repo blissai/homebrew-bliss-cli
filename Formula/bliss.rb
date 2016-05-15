@@ -1,6 +1,6 @@
 class Bliss < Formula
-  VERSION = '1.0.42'
-  version "#{VERSION}"
+  VERSION = '1.0.42'.freeze
+  version VERSION.to_s
   desc 'Bliss Enterprise Tool for local repository analysis.'
   homepage 'https://github.com/founderbliss/docker'
   url "https://github.com/founderbliss/bliss-cli/archive/#{VERSION}.tar.gz"
@@ -11,7 +11,6 @@ class Bliss < Formula
     lib.install Dir['lib/**']
     prefix.install Dir['scripts']
     prefix.install 'blisscollector.rb'
-    prefix.install 'Dockerfile'
     prefix.install 'Gemfile'
     exec_command = "#!/bin/sh\nruby #{prefix}/blisscollector.rb \"$@\""
     File.write('bin/bliss', exec_command)
