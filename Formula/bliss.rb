@@ -4,7 +4,7 @@ class Bliss < Formula
   desc 'Bliss Enterprise Tool for local repository analysis.'
   homepage 'https://github.com/founderbliss/docker'
   url "https://github.com/founderbliss/bliss-cli/archive/#{VERSION}.tar.gz"
-  sha256 '0cf9d69ed6cd40062d231c3c966d709c4b6bdea40906f7b6a4aaba5397d48f46'
+  sha256 'd37cc3acc29fd3f9de477b42343e3e925b99d92ef9e4c0133ba02a1134a770e2'
   head 'https://github.com/founderbliss/bliss-cli.git'
 
   def install
